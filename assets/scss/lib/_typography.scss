@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'G2 Ciao Shrill';
+    src: local('G2 Ciao Shrill'), local('G2Ciao-Shrill'),
+        url('../../assets/font/G2Ciao-Shrill.woff2') format('woff2'),
+        url('../../assets/font/G2Ciao-Shrill.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LothianM';
+    src: local('Lothian M'), local('Lothian-M'),
+        url('../../assets/font/Lothian-M.woff2') format('woff2'),
+        url('../../assets/font/Lothian-M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lothian Sans XS';
+    src: local('Lothian Sans XS'), local('LothianSans-XS'),
+        url('../../assets/font/LothianSans-XS.woff2') format('woff2'),
+        url('../../assets/font/LothianSans-XS.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: local('Whyte'),
+        url('../../assets/font/Whyte.woff2') format('woff2'),
+        url('../../assets/font/Whyte.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-whyte, body {
+    font-family: 'Whyte', serif;
+}
+
+.font-lothian-m {
+    font-family: 'Lothian M', sans-serif;
+}
+
+.font-lothian-sans-xs, h1, h2, h3, h4, h5 {
+    font-family: 'Lothian Sans XS', sans-serif;
+}
+
+.font-g2-ciao-shrill {
+    font-family: 'G2 Ciao Shrill', sans-serif;
+}
+
+button {
+    font-weight: normal !important;
+}

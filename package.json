@@ -1,0 +1,35 @@
+{
+  "name": "honest-history-mag-v2-theme",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "webpack": "cross-env NODE_ENV=development webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "cross-env NODE_ENV=production webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "test": "cross-env nyc ava --verbose --serial",
+    "posttest": "cross-env nyc report --reporter=html"
+  },
+  "author": "Phil Kurth <phil@philkurth.com.au>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.27.1",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "fs": "0.0.1-security",
+    "glob-all": "^3.2.1",
+    "laravel-mix": "^6.0.25",
+    "laravel-mix-purgecss": "^6.0.0",
+    "laravel-mix-tailwind": "^0.1.2",
+    "laravel-mix-versionhash": "2.0.1",
+    "resolve-url-loader": "4.0.0",
+    "sass": "^1.35.1",
+    "sass-loader": "12.*",
+    "tailwindcss": "^2.2.4",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "dependencies": {}
+}
