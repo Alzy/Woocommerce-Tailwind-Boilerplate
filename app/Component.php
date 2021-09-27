@@ -4,10 +4,10 @@
 namespace MyTheme;
 
 
-class View {
+class Component {
 
 
-	public static $view_dir = '';
+	public static $components_dir = '';
 
 
 	/**
@@ -39,7 +39,7 @@ class View {
 		$markup = '';
 		$path = self::get_full_path( $name . $suffix );
 
-		if ( $t = self::view_template_exists( $path ) ) {
+		if ( $t = self::component_template_exists( $path ) ) {
 			$data = self::prepare_data( $data );
 			ob_start();
 			include $path;
@@ -87,7 +87,7 @@ class View {
 	 *
 	 * @return bool
 	 */
-	private static function view_template_exists( $name ) {
+	private static function component_template_exists( $name ) {
 		return file_exists( $name );
 	}
 
@@ -100,7 +100,7 @@ class View {
 	 * @return string
 	 */
 	private static function get_full_path( $name ) {
-		return trailingslashit( self::$view_dir ) . ltrim( $name, '/' );
+		return trailingslashit( self::$components_dir ) . ltrim( $name, '/' );
 	}
 
 

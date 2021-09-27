@@ -2,7 +2,7 @@
 
 
 use MyTheme\AutoLoader;
-use MyTheme\View;
+use MyTheme\Component;
 
 
 /*
@@ -19,7 +19,7 @@ $loader = new AutoLoader();
 $loader->register();
 $loader->addNamespace( 'MyTheme', get_stylesheet_directory() . '/app' );
 
-View::$view_dir = get_stylesheet_directory() . '/templates/views';
+Component::$components_dir = get_stylesheet_directory() . '/templates/components';
 
 require get_stylesheet_directory() . '/includes/scripts-and-styles.php';
 
