@@ -1,0 +1,19 @@
+html {
+  @apply antialiased;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+
+  @screen md {
+    font-size: 18px;
+  }
+
+  body {
+    @apply min-h-screen;
+  }
+
+  section {
+    @apply block my-4 py-4;
+  }
+
+  @include html_extensions;
+}

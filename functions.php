@@ -43,3 +43,6 @@ function add_woocommerce_support() {
     ) );
 }
 add_action( 'after_setup_theme', 'add_woocommerce_support' );
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+require get_stylesheet_directory() . '/includes/product-page-ajax-add-to-cart.php';

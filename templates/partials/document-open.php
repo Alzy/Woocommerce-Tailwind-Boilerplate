@@ -10,4 +10,4 @@
     <?php wp_head() ?>
 </head>
 <body <?php body_class() ?>>
-<div class="flex h-screen h-available overflow-y-hidden flex-col-reverse md:flex-row ">
+<div class="flex flex-col">

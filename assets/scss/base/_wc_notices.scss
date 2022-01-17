@@ -1,0 +1,24 @@
+.woocommerce-notices-wrapper {
+  @apply
+    fixed
+    text-center
+    bottom-0
+    left-0
+    w-full
+    text-white
+    z-50;
+
+  ul {
+    @apply
+      bg-green-500
+      px-4
+      py-2;
+
+    &.woocommerce-error {
+      @apply
+        bg-red-500;
+    }
+  }
+
+  @include wc_notices_extensions;
+}

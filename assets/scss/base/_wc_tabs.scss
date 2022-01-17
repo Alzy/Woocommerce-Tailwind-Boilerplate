@@ -1,0 +1,33 @@
+.wc-tabs-wrapper {
+  .wc-tabs {
+    @apply
+      flex;
+    & > * {
+      @apply
+        border
+        p-2;
+
+      &:first-child {
+        @apply border-r-0;
+      }
+      &:last-child {
+        @apply border-l-0;
+      }
+
+      &.active {
+        @apply
+          border-l
+          border-r
+          border-black;
+      }
+    }
+  }
+
+  .wc-tab {
+    @apply
+      p-2
+      border;
+  }
+
+  @include wc_tabs_extensions;
+}

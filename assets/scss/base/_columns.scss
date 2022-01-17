@@ -1,0 +1,47 @@
+.columns-4 {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    width: 50%;
+    @apply p-2;
+
+    @screen md {
+      width: 25%;
+    }
+  }
+
+  @include columns-3_extensions;
+}
+
+.columns-3 {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    width: 50%;
+    @apply p-2;
+
+    @screen md {
+      width: 33.333%;
+    }
+  }
+
+  @include columns-3_extensions;
+}
+
+.columns-2 {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    width: 50%;
+    @apply p-2;
+
+    @screen md {
+      width: 50%;
+    }
+  }
+
+  @include columns-2_extensions;
+}

@@ -1,14 +1,10 @@
-// Add any custom base CSS can go here
-
-
 // Foundation
 // =≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠
-html {
-  @apply antialiased;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-
-  @screen md {
-    font-size: 18px;
-  }
-}
+@import "../base/html";
+@import "../base/links";
+@import "../base/inputs";
+@import "../base/buttons";
+@import "../base/tables";
+@import "../base/columns";
+@import "../base/wc_tabs";
+@import "../base/wc_notices";

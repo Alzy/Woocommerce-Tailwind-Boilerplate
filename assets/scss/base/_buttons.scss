@@ -1,0 +1,16 @@
+button,
+.button,
+a.button,
+input.button,
+input[type=submit],
+#review_form #submit {
+  @apply
+    text-center
+    bg-transparent
+    inline-block
+    p-2
+    border
+    border-black;
+
+  @include button_extensions;
+}

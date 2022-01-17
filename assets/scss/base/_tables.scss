@@ -1,0 +1,35 @@
+table {
+  @apply
+    mb-4
+    w-full;
+
+  thead {
+    tr {
+      @apply
+        border-b-2;
+      th {
+        @apply
+          p-2
+          text-left;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      @apply
+        border-b-2;
+      td, th {
+        @apply
+          p-2
+          text-left;
+      }
+    }
+
+    tr:last-of-type {
+      @apply border-b-0;
+    }
+  }
+
+  @include table_extensions;
+}

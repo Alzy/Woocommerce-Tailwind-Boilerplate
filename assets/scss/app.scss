@@ -1,9 +1,10 @@
-@import "lib/mixins";
+@import "partials/mixins";
 @import "~tailwindcss/base";
+@import "partials/extensions";
 @import "partials/base";
 @import "partials/animations";
 @import "~tailwindcss/components";
 @import "partials/components";
 @import "~tailwindcss/utilities";
 @import "partials/utilities";
-@import "lib/typography";
+@import "partials/typography";
